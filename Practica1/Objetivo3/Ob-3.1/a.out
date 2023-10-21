@@ -1,0 +1,57 @@
+#! /opt/iverilog/bin/vvp
+:ivl_version "11.0 (stable)" "(v11_0-132-gb2f2414f4)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/iverilog/lib/ivl/system.vpi";
+:vpi_module "/opt/iverilog/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/iverilog/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/iverilog/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/iverilog/lib/ivl/va_math.vpi";
+S_0x5629c9c7bd10 .scope module, "fa" "fa" 2 1;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "c_out";
+    .port_info 1 /OUTPUT 1 "sum";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+    .port_info 4 /INPUT 1 "c_in";
+L_0x5629c9cc73b0 .functor OR 1, L_0x5629c9cc74c0, L_0x5629c9cc6ea0, C4<0>, C4<0>;
+L_0x7fa1d7c9a060 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x5629c9c7bea0_0 .net *"_ivl_10", 0 0, L_0x7fa1d7c9a060;  1 drivers
+v0x5629c9cc5e20_0 .net *"_ivl_11", 1 0, L_0x5629c9cc7310;  1 drivers
+v0x5629c9cc5f00_0 .net *"_ivl_16", 1 0, L_0x5629c9cc7690;  1 drivers
+L_0x7fa1d7c9a0a8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x5629c9cc5ff0_0 .net *"_ivl_19", 0 0, L_0x7fa1d7c9a0a8;  1 drivers
+v0x5629c9cc60d0_0 .net *"_ivl_20", 1 0, L_0x5629c9cc7800;  1 drivers
+L_0x7fa1d7c9a0f0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x5629c9cc6200_0 .net *"_ivl_23", 0 0, L_0x7fa1d7c9a0f0;  1 drivers
+v0x5629c9cc62e0_0 .net *"_ivl_24", 1 0, L_0x5629c9cc7970;  1 drivers
+v0x5629c9cc63c0_0 .net *"_ivl_3", 1 0, L_0x5629c9cc7040;  1 drivers
+L_0x7fa1d7c9a018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x5629c9cc64a0_0 .net *"_ivl_6", 0 0, L_0x7fa1d7c9a018;  1 drivers
+v0x5629c9cc6610_0 .net *"_ivl_7", 1 0, L_0x5629c9cc7190;  1 drivers
+o0x7fa1d7ce31f8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5629c9cc66f0_0 .net "a", 0 0, o0x7fa1d7ce31f8;  0 drivers
+o0x7fa1d7ce3228 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5629c9cc67b0_0 .net "b", 0 0, o0x7fa1d7ce3228;  0 drivers
+v0x5629c9cc6870_0 .net "c1", 0 0, L_0x5629c9cc6ea0;  1 drivers
+v0x5629c9cc6930_0 .net "c2", 0 0, L_0x5629c9cc74c0;  1 drivers
+o0x7fa1d7ce32b8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x5629c9cc69f0_0 .net "c_in", 0 0, o0x7fa1d7ce32b8;  0 drivers
+v0x5629c9cc6ab0_0 .net "c_out", 0 0, L_0x5629c9cc73b0;  1 drivers
+v0x5629c9cc6b70_0 .net "sum", 0 0, L_0x5629c9cc75a0;  1 drivers
+v0x5629c9cc6d40_0 .net "sum1", 0 0, L_0x5629c9cc6f70;  1 drivers
+L_0x5629c9cc6ea0 .part L_0x5629c9cc7310, 1, 1;
+L_0x5629c9cc6f70 .part L_0x5629c9cc7310, 0, 1;
+L_0x5629c9cc7040 .concat [ 1 1 0 0], o0x7fa1d7ce31f8, L_0x7fa1d7c9a018;
+L_0x5629c9cc7190 .concat [ 1 1 0 0], o0x7fa1d7ce3228, L_0x7fa1d7c9a060;
+L_0x5629c9cc7310 .arith/sum 2, L_0x5629c9cc7040, L_0x5629c9cc7190;
+L_0x5629c9cc74c0 .part L_0x5629c9cc7970, 1, 1;
+L_0x5629c9cc75a0 .part L_0x5629c9cc7970, 0, 1;
+L_0x5629c9cc7690 .concat [ 1 1 0 0], o0x7fa1d7ce32b8, L_0x7fa1d7c9a0a8;
+L_0x5629c9cc7800 .concat [ 1 1 0 0], L_0x5629c9cc6f70, L_0x7fa1d7c9a0f0;
+L_0x5629c9cc7970 .arith/sum 2, L_0x5629c9cc7690, L_0x5629c9cc7800;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "fa.v";

@@ -1,0 +1,223 @@
+$date
+	Thu Oct 19 15:31:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module tb_sum4 $end
+$var wire 4 ! test_S [3:0] $end
+$var wire 1 " test_C_out $end
+$var reg 4 # test_A [3:0] $end
+$var reg 4 $ test_B [3:0] $end
+$var reg 1 % test_c_in $end
+$scope module sum $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % c_in $end
+$var wire 1 " c_out $end
+$var wire 3 ( c [2:0] $end
+$var wire 4 ) S [3:0] $end
+$scope module Fo $end
+$var wire 1 * a $end
+$var wire 1 + b $end
+$var wire 1 % c_in $end
+$var wire 1 , c_out $end
+$var wire 1 - sum1 $end
+$var wire 1 . sum $end
+$var wire 1 / c2 $end
+$var wire 1 0 c1 $end
+$upscope $end
+$scope module Folun $end
+$var wire 1 1 a $end
+$var wire 1 2 b $end
+$var wire 1 3 c_in $end
+$var wire 1 4 c_out $end
+$var wire 1 5 sum1 $end
+$var wire 1 6 sum $end
+$var wire 1 7 c2 $end
+$var wire 1 8 c1 $end
+$upscope $end
+$scope module Foluncu $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ; c_in $end
+$var wire 1 < c_out $end
+$var wire 1 = sum1 $end
+$var wire 1 > sum $end
+$var wire 1 ? c2 $end
+$var wire 1 @ c1 $end
+$upscope $end
+$scope module Folunculo $end
+$var wire 1 A a $end
+$var wire 1 B b $end
+$var wire 1 C c_in $end
+$var wire 1 " c_out $end
+$var wire 1 D sum1 $end
+$var wire 1 E sum $end
+$var wire 1 F c2 $end
+$var wire 1 G c1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+1.
+0-
+0,
+0+
+0*
+b1 )
+b0 (
+b0 '
+b0 &
+1%
+b0 $
+b0 #
+0"
+b1 !
+$end
+#2000
+1"
+1F
+1C
+1<
+1?
+1;
+14
+17
+13
+b111 (
+1,
+06
+0>
+0E
+10
+15
+1=
+1D
+1+
+1*
+11
+19
+1A
+b0 !
+b0 )
+0.
+b1 $
+b1 '
+b1111 #
+b1111 &
+0%
+#4000
+16
+07
+1>
+0?
+1E
+0F
+05
+18
+0=
+1@
+0D
+1G
+12
+1:
+1B
+b1111 !
+b1111 )
+1.
+b1111 $
+b1111 '
+1%
+#6000
+13
+1;
+1C
+0.
+1/
+1,
+06
+17
+14
+0>
+1?
+b111 (
+1<
+b0 !
+b0 )
+0E
+1F
+1"
+1-
+00
+15
+08
+1=
+0@
+1D
+0G
+0*
+01
+09
+0A
+b0 #
+b0 &
+#8000
+0"
+1E
+0F
+0C
+0<
+1>
+0?
+0;
+04
+16
+07
+03
+b0 (
+0,
+0+
+0:
+1*
+19
+b1111 !
+b1111 )
+1.
+0/
+b1010 $
+b1010 '
+b101 #
+b101 &
+0%
+#10000
